@@ -1,0 +1,108 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Its changes the box model so that it dosen't add border and padding no longer added*/
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 3rem;
+    background-image: url('../img/body-img.jpg');
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 35rem;
+    height: 42rem;
+    background: rgba(0, 0, 0, .5);
+    padding: 8rem 5rem;
+    border: 10px solid rgba(0, 0, 0, 0.219);
+    border-radius: 8px;
+}
+
+.login-box:hover {
+    border: 10px solid rgba(0, 0, 0, 0.466);
+}
+
+.user {
+    height: 10rem;
+    position: absolute;
+    overflow: hidden;
+    top: calc(-3% - 5rem);
+    left: calc(50% - 5rem);
+}
+
+h2 {
+    padding: 0 0 20px;
+    color: ##efed40;
+    text-align: center;
+}
+
+.login-box p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 4rem;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 4rem;
+    color: #fff;
+    font-size: 1.4rem;
+    background: #147ed4;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.login-box input[type="submit"]:hover {
+    background: #2190e6;
+}
+
+.login-box a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
